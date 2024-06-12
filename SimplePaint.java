@@ -10,8 +10,7 @@ import java.io.IOException;
 
 /**
  * Simple paint program that uses the {@link QuadTreeNode} as a backing implementation. Most of the code
- * is UI-related so it is not required that you understand it. This class is provided as a courtesy
- * for visualization.
+ * is UI-related.
  *
  * @author cquanze
  */
@@ -28,7 +27,6 @@ public class SimplePaint implements Runnable {
      * This method guarantees that even images with non-square dimensions are able to be loaded by
      * loading them in the smallest {@link QuadTreeNode} that can contain them.
      * <p/>
-     * You do not need to edit this code.
      *
      * @param image the image to compress into a {@link QuadTreeNode}
      * @return the compressed version of the image as a {@link QuadTreeNode}.
@@ -116,7 +114,6 @@ public class SimplePaint implements Runnable {
         menuInfo.add(infoMenuItem);
         menuInfo.add(showBordersMenuItem);
         menuBar.add(menuFile);
-//        menuBar.add(menuEdit);
         menuBar.add(menuInfo);
         window.setJMenuBar(menuBar);
 
