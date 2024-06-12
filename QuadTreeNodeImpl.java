@@ -1,4 +1,4 @@
-// CIS 121, QuadTree
+// QuadTree
 
 import java.util.Objects;
 
@@ -9,10 +9,9 @@ public class QuadTreeNodeImpl implements QuadTreeNode {
      */
     private Integer color;
     private int size; //dimension
-    private QuadTreeNodeImpl[] children;
     //instead of adding `isLeaf` attribute we can just check if all children of a node are null
-
-
+    
+    private QuadTreeNodeImpl[] children;
     /**
      * Constructor for a Leaf Node
      * @param color - color of the leaf node
@@ -42,10 +41,7 @@ public class QuadTreeNodeImpl implements QuadTreeNode {
 
     /**
      * ! Do not delete this method !
-     * Please implement your logic inside this method without modifying the signature
-     * of this method, or else your code won't compile.
      * <p/>
-     * As always, if you want to create another method, make sure it is not public.
      *
      * @param image image to put into the tree
      * @return the newly built QuadTreeNode instance which stores the compressed image
